@@ -1,4 +1,4 @@
-<?php get_template_part('parts/header-wp_dental'); ?>
+<?php get_header(); ?>
 
 
 <div class="container">
@@ -287,7 +287,7 @@ else {
         </div>
       </div>
 
-        <?php comments_template('/parts/comments-wp_dental.php'); ?>
+        <?php comments_template('comments-wp_dental.php'); ?>
         <?php endwhile; ?>
         <?php else: ?>
         <?php wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; ?>  
@@ -295,4 +295,4 @@ else {
 
 </div><!-- .container -->
 
-<?php get_template_part('parts/footer-wp_dental'); ?>
+<?php get_footer(); ?>
