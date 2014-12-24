@@ -7,7 +7,7 @@ function tindakan_theme_comment($comment, $args, $depth) {
             <td><?php echo get_comment_date(); ?> <?php edit_comment_link(__('(E)'),'  ','') ?></td>
             <td><?php comment_text() ?></td>
             <td><?php echo get_comment_meta( $comment->comment_ID, '_diagnosa', true ); ?></td>
-             <td class="text-right"><?php echo get_comment_meta( $comment->comment_ID, '_terapi', true ); ?></td>
+            <td><?php echo get_comment_meta( $comment->comment_ID, '_terapi', true ); ?></td>
           </tr>
         </tbody>
 
