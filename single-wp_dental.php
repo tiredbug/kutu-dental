@@ -287,7 +287,7 @@ else {
         </div>
       </div>
 
-        <?php comments_template('comments-wp_dental.php'); ?>
+        <?php comments_template('/comments-wp_dental.php'); ?>
         <?php endwhile; ?>
         <?php else: ?>
         <?php wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; ?>  
